@@ -1,0 +1,5 @@
+# app-ads.txt - IAB Tech Lab specification
+# https://iabtechlab.com/app-ads-txt/
+# Generated: 2026-06-27
+
+google.com, pub-3824818812508313, DIRECT, f08c47fec0942fa0
