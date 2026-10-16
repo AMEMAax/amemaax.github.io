@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToiLog Privacy Policy</title>
+  <meta name="description" content="Records are stored on your device and in Firebase, and sync through iCloud when available. AI predictions and comments send records and health profile information to OpenAI. Transfers may happen automatically.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #33945f; --green-light: #e8f5ee; --green-mid: #4aaf78;
+      --bg: #f7faf8; --surface: #ffffff; --text: #1a2a22;
+      --muted: #6b8070; --border: #dde8e2; --radius: 18px;
+    }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(247,250,248,.9); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5vw; display: flex; align-items: center; height: 64px; gap: 16px;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 32px; height: 32px; border-radius: 9px;
+      background: linear-gradient(135deg, var(--green), var(--green-mid));
+      display: flex; align-items: center; justify-content: center; font-size: 1rem;
+    }
+    .nav-back { color: var(--muted); text-decoration: none; font-size: .9rem; margin-left: auto; }
+    .nav-back:hover { color: var(--green); }
+    main { max-width: 760px; margin: 0 auto; padding: 60px 5vw 100px; }
+    .page-eyebrow { color: var(--green); font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 800; letter-spacing: -.02em; margin-bottom: 8px; }
+    .updated { color: var(--muted); font-size: .88rem; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 1.15rem; font-weight: 700; margin: 36px 0 12px; }
+    p { color: #3a4a40; margin-bottom: 16px; font-size: .95rem; }
+    ul { margin: 0 0 16px 20px; }
+    li { color: #3a4a40; font-size: .95rem; margin-bottom: 8px; }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .notice {
+      background: var(--green-light); border-left: 3px solid var(--green);
+      border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 24px 0; font-size: .9rem;
+    }
+    footer {
+      background: #0f1c14; color: rgba(255,255,255,.5);
+      padding: 32px 5vw; text-align: center; font-size: .85rem;
+    }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; }
+    footer a:hover { color: #4aaf78; }
+.language-nav {display:flex;flex-wrap:wrap;gap:8px 16px;margin:24px 0;} .language-nav [aria-current] {font-weight:700;text-decoration:underline;} p, a {overflow-wrap:anywhere;}</style>
+</head>
+<body>
+<nav><a href="index.html" class="nav-logo"><span class="nav-logo-icon">🚽</span>ToiLog</a></nav>
+<main>
+  <h1>ToiLog Privacy Policy</h1>
+  <div class="language-nav" aria-label="Language"><a href="privacy.html" lang="ja" hreflang="ja">日本語</a>
+<a href="privacy-en.html" lang="en" hreflang="en" aria-current="page">English</a>
+<a href="privacy-de.html" lang="de" hreflang="de">Deutsch</a>
+<a href="privacy-es.html" lang="es" hreflang="es">Español</a>
+<a href="privacy-fr.html" lang="fr" hreflang="fr">Français</a>
+<a href="privacy-it.html" lang="it" hreflang="it">Italiano</a>
+<a href="privacy-pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
+<a href="privacy-ko.html" lang="ko" hreflang="ko">한국어</a>
+<a href="privacy-zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="privacy-zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></div>
+  <p class="updated">Last updated: October 17, 2026</p>
+  <p class="notice">ToiLog, developed by Misora Yatsuki, helps you log and review toilet visits and water intake. This document describes data handling in the iOS app.</p>
+  <section><h2>1. Storage and sync</h2><p>Records are saved on your device and automatically stored and synced through Firebase Authentication and Cloud Firestore, for both free and Pro users. Record dates, types, amounts, conditions, colors and notes are associated with an anonymous authentication ID or device ID. Anonymous authentication does not make the records anonymous. The main profile&#x27;s records also sync through iCloud when available. Photo files attached through supported features remain on the device; the app does not send those images to Firebase or OpenAI.</p></section>
+<section><h2>2. Data sent to AI</h2><p>AI predictions, comments and reports use the OpenAI API. Depending on the feature, we send record dates, types, counts, water intake, summaries, health profile information, consultation questions and relevant record details or notes. Predictions and comments may trigger automatic transfers while you use the app. Do not enter unnecessary personal information such as names in free-text fields. AI output is not a substitute for diagnosis or treatment.</p></section>
+<section><h2>3. Other services</h2><p>Firebase Analytics receives usage events such as screen activity, record types and purchase actions; Crashlytics receives diagnostic information. The free version uses Google AdMob for ads. These services may process identifiers, device information and IP addresses. Apple processes purchases and subscriptions; the app does not receive card details. Providers may process data outside your country under their respective policies.</p></section>
+<section><h2>4. Access, deletion and retention</h2><p>You can edit and delete records in the app. Uninstalling alone does not delete all data in Firebase, iCloud, provider logs or backups. Contact the address below to request access to or deletion of stored records. We may need information to identify the relevant data. Usage and diagnostic log retention follows provider settings and policies; no single retention period is guaranteed for all data.</p></section>
+<section><h2>5. HealthKit and other policies</h2><p>With your permission, HealthKit integration reads and writes water intake and reads step counts. HealthKit-derived data is not used for advertising. You can change permissions in device settings. The service is not intended for children under 13. When this policy changes, we update this page and its revision date.</p></section>
+  <p><a href="https://firebase.google.com/support/privacy">Google Firebase</a> ·
+  <a href="https://policies.google.com/privacy">Google / AdMob</a> ·
+  <a href="https://platform.openai.com/docs/guides/your-data">OpenAI API</a> ·
+  <a href="https://www.apple.com/legal/privacy/">Apple</a></p>
+  <h2>Contact and data deletion requests</h2>
+  <p>Misora Yatsuki · <a href="mailto:goodmisogoodmiso@gmail.com">goodmisogoodmiso@gmail.com</a></p>
+</main>
+<footer><p>© 2025–2026 Misora Yatsuki · <a href="index.html">ToiLog</a></p></footer>
+</body></html>

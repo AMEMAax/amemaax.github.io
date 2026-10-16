@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToiLog 隱私權政策</title>
+  <meta name="description" content="紀錄儲存在裝置與 Firebase 中，並在 iCloud 可用時進行同步。 AI 預測與評論會將紀錄、健康檔案等傳送至 OpenAI，也可能自動傳送。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #33945f; --green-light: #e8f5ee; --green-mid: #4aaf78;
+      --bg: #f7faf8; --surface: #ffffff; --text: #1a2a22;
+      --muted: #6b8070; --border: #dde8e2; --radius: 18px;
+    }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(247,250,248,.9); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5vw; display: flex; align-items: center; height: 64px; gap: 16px;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 32px; height: 32px; border-radius: 9px;
+      background: linear-gradient(135deg, var(--green), var(--green-mid));
+      display: flex; align-items: center; justify-content: center; font-size: 1rem;
+    }
+    .nav-back { color: var(--muted); text-decoration: none; font-size: .9rem; margin-left: auto; }
+    .nav-back:hover { color: var(--green); }
+    main { max-width: 760px; margin: 0 auto; padding: 60px 5vw 100px; }
+    .page-eyebrow { color: var(--green); font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 800; letter-spacing: -.02em; margin-bottom: 8px; }
+    .updated { color: var(--muted); font-size: .88rem; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 1.15rem; font-weight: 700; margin: 36px 0 12px; }
+    p { color: #3a4a40; margin-bottom: 16px; font-size: .95rem; }
+    ul { margin: 0 0 16px 20px; }
+    li { color: #3a4a40; font-size: .95rem; margin-bottom: 8px; }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .notice {
+      background: var(--green-light); border-left: 3px solid var(--green);
+      border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 24px 0; font-size: .9rem;
+    }
+    footer {
+      background: #0f1c14; color: rgba(255,255,255,.5);
+      padding: 32px 5vw; text-align: center; font-size: .85rem;
+    }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; }
+    footer a:hover { color: #4aaf78; }
+.language-nav {display:flex;flex-wrap:wrap;gap:8px 16px;margin:24px 0;} .language-nav [aria-current] {font-weight:700;text-decoration:underline;} p, a {overflow-wrap:anywhere;}</style>
+</head>
+<body>
+<nav><a href="index.html" class="nav-logo"><span class="nav-logo-icon">🚽</span>ToiLog</a></nav>
+<main>
+  <h1>ToiLog 隱私權政策</h1>
+  <div class="language-nav" aria-label="Language"><a href="privacy.html" lang="ja" hreflang="ja">日本語</a>
+<a href="privacy-en.html" lang="en" hreflang="en">English</a>
+<a href="privacy-de.html" lang="de" hreflang="de">Deutsch</a>
+<a href="privacy-es.html" lang="es" hreflang="es">Español</a>
+<a href="privacy-fr.html" lang="fr" hreflang="fr">Français</a>
+<a href="privacy-it.html" lang="it" hreflang="it">Italiano</a>
+<a href="privacy-pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a>
+<a href="privacy-ko.html" lang="ko" hreflang="ko">한국어</a>
+<a href="privacy-zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="privacy-zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁體中文</a></div>
+  <p class="updated">最後更新：2026年10月17日</p>
+  <p class="notice">ToiLog 由 Misora Yatsuki 開發，協助您記錄與回顧如廁及飲水情況。本文說明 iOS App 的資料處理方式。</p>
+  <section><h2>1. 儲存與同步</h2><p>紀錄儲存在裝置上，並透過 Firebase Authentication 與 Cloud Firestore 自動進行雲端儲存及同步，適用於免費版與 Pro。紀錄的日期、類型、數量、狀態、顏色與備註等會與匿名驗證 ID 或裝置 ID 關聯。匿名驗證不代表紀錄已匿名化。iCloud 可用時也會同步主要個人檔案的紀錄。透過支援功能附加的照片檔案保留在裝置上，App 不會將這些影像傳送至 Firebase 或 OpenAI。</p></section>
+<section><h2>2. 傳送至 AI 的資料</h2><p>AI 預測、評論與報告使用 OpenAI API。依功能需要，會傳送紀錄日期、類型、次數、飲水量、彙整資訊、健康檔案、諮詢問題及相關紀錄的詳細資料或備註。預測與評論也可能在使用 App 時自動觸發傳送。請勿在自由輸入欄位中填寫姓名等不必要的個人資料。AI 輸出不能取代診斷或治療。</p></section>
+<section><h2>3. 其他服務</h2><p>Firebase Analytics 接收畫面使用、紀錄類型與購買操作等使用事件，Crashlytics 接收診斷資訊。免費版使用 Google AdMob 顯示廣告。這些服務可能處理識別碼、裝置資訊及 IP 位址。Apple 處理購買與訂閱，App 不會收到信用卡資料。服務供應商可能依各自政策，在您所在國家或地區以外處理資料。</p></section>
+<section><h2>4. 查閱、刪除與保存期限</h2><p>您可以在 App 中編輯或刪除紀錄。僅解除安裝 App 不會刪除 Firebase、iCloud、供應商記錄檔或備份中的全部資料。如需查閱或刪除已儲存的紀錄，請聯絡下方信箱。我們可能需要核對資訊以確認相關資料。使用與診斷記錄檔的保存依供應商設定及政策辦理，不保證所有資料都有統一的保存期限。</p></section>
+<section><h2>5. HealthKit 及其他政策</h2><p>經您授權後，HealthKit 整合會讀寫飲水量並讀取步數。來自 HealthKit 的資料不會用於廣告。您可以在裝置設定中變更權限。本服務不以未滿 13 歲兒童為對象。政策變更時，我們會更新此頁面及更新日期。</p></section>
+  <p><a href="https://firebase.google.com/support/privacy">Google Firebase</a> ·
+  <a href="https://policies.google.com/privacy">Google / AdMob</a> ·
+  <a href="https://platform.openai.com/docs/guides/your-data">OpenAI API</a> ·
+  <a href="https://www.apple.com/legal/privacy/">Apple</a></p>
+  <h2>聯絡與資料刪除請求</h2>
+  <p>Misora Yatsuki · <a href="mailto:goodmisogoodmiso@gmail.com">goodmisogoodmiso@gmail.com</a></p>
+</main>
+<footer><p>© 2025–2026 Misora Yatsuki · <a href="index.html">ToiLog</a></p></footer>
+</body></html>
